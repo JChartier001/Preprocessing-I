@@ -136,18 +136,20 @@ body {
 }
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   justify-items: center;
   width: 100%;
-  border: 1px solid black;
 }
 header nav {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: flex-end;
-  border: 1px solid red;
 }
 header a {
-  justify-content: space-between;
-  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  width: 6%;
+  justify-content: center;
 }
