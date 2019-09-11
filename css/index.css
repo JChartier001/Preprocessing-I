@@ -196,7 +196,8 @@ section .myinfocontent .workwithme {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 20% 0;
+  margin-top: 20%;
+  margin-bottom: 10%;
   padding-bottom: 3%;
 }
 section .myinfocontent .contactmebutton {
@@ -229,6 +230,7 @@ section .skills {
 }
 section .skills h3 {
   width: 30%;
+  margin-bottom: 5%;
 }
 section .skills ul {
   list-style-type: disc;
