@@ -134,22 +134,117 @@ html,
 body {
   height: 100%;
 }
-header {
+body {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  height: 100%;
+}
+section {
+  display: flex;
+  flex-direction: row-reverse;
+  /*align-content: stretch;*/
+  height: 100vh;
+  border: 1px solid green;
+}
+section .myinfocontent {
+  /*.column();*/
+  background-color: lavenderblush;
+  width: 25%;
+  padding: 0 2%;
+  height: 100%;
+}
+section .myinfocontent .contactinfo {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: flex-start;
+  width: 100%;
+  margin: 15% 0;
+  margin-bottom: 8%;
+}
+section .myinfocontent .contactinfo p {
+  padding: 1%;
+}
+section .myinfocontent h1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-items: center;
+  font-size: 2.5rem;
+  justify-content: center;
+  padding: 1%;
+}
+section .myinfocontent img {
+  padding: 2%;
+  margin-top: 10%;
+}
+section .myinfocontent h2 {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+section .myinfocontent h3 {
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+section .myinfocontent .workwithme {
+  font-size: 1.5rem;
+  font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20% 0;
+  padding-bottom: 3%;
+}
+section .myinfocontent .contactmebutton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
+}
+section .myinfocontent .contactmebutton a {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 4%;
+  width: 35%;
+  justify-content: center;
+  padding: 2% 3%;
+  text-decoration: none;
+  color: black;
+}
+section .myinfocontent .contactmebutton a:hover {
+  color: white;
+  background: black;
+}
+section .skills {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-top: 20%;
+}
+section .skills h3 {
+  width: 30%;
+}
+section .skills ul {
+  list-style-type: disc;
+}
+section .skills ul li {
+  padding-bottom: 5%;
+  width: 80%;
+  margin-left: 5%;
 }
 header nav {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: flex-end;
+  background-color: lavenderblush;
 }
-header a {
-  display: flex;
-  flex-wrap: wrap;
-  width: 6%;
+header nav a {
+  width: 10%;
   justify-content: center;
 }
