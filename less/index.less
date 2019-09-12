@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 62.50%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -53,17 +54,39 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-.display(){
+.display() {
     display: flex;
     flex-wrap: wrap;
 }
-.column(){
+
+.column() {
     display: flex;
     flex-flow: column wrap;
 }
+
+@rightbackground: lavenderblush;
+@leftbackground: offwhite;
+
+.h3() {
+    font-size: 1.8rem;
+}
+
+.h2() {
+    font-size: 2.0rem;
+}
+
+.h1() {
+    font-size: 2.5rem;
+}
+
+.h4() {
+    font-size: 1.5rem;
+}
+
+html, body {
+    
+}
+
 body {
     .column();
     align-content: center;
@@ -74,15 +97,13 @@ body {
 section {
     display: flex;
     flex-direction: row-reverse;
-    /*align-content: stretch;*/
     height: 100vh;
-    border: 1px solid green;
+    
 
    
     .myinfocontent {
-        /*.column();*/
-        background-color: lavenderblush;
-        width: 25%;
+        background-color: @rightbackground;
+        width: 30%;
         padding: 0 2%;
         height: 100%;
 
@@ -102,7 +123,7 @@ section {
         //closes contactinfo
         h1 {
             .display();
-            font-size: 2.5rem;
+            .h1();
             justify-content: center;
             padding: 1%;
         }
@@ -113,14 +134,14 @@ section {
         }
         //closes img
         h2 {
-            font-size: 1.8rem;
+            .h2();
             display: flex;
             justify-content: center;
             padding: 3%;
         }
         //closes h2
         h3 {
-            font-size: 1.2rem;
+            .h3();
             margin: 2% 0;
             border-top: 5px solid black;
             border-bottom: 5px solid black;
@@ -190,23 +211,83 @@ section {
 }
     //closes section
 
+.resumeinfo {
+    background-color: @leftbackground;
+    width: 100%;
 
-header {
+    header {
 
 
-    nav {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        background-color: lavenderblush;
-        
-        a {
-           width: 10%;
-            justify-content: center;
-            
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            background-color: @leftbackground;
+
+            a {
+                width: 10%;
+                justify-content: center;
+            }
+            //closes a
         }
-        //closes a
+        //closes nav
     }
-    //closes nav
-}
-//closes header
+    //closes header
+    .experience {
+        margin-top: 15%;
+
+        h2 {
+            .h2();
+            text-decoration: underline;
+            margin: 2% 0;
+        }
+        //closes h2
+        div {
+
+            h4 {
+                .h4();
+                .display();
+                margin-bottom: 2%;
+            }
+            //closes h4
+            .jobdescription {
+                .column();
+                list-style-type: disc;
+                font-size: 16px;
+
+                li {
+                    padding: 0.5%;
+                }
+            }
+        }
+        //closes div
+    }
+    //closes experience
+    .education {
+        margin-top: 15%;
+
+        h2 {
+            .h2();
+            text-decoration: underline;
+            margin: 2% 0;
+        }
+        //closes h2
+        div {
+
+            h4 {
+                .h4();
+                .display();
+                margin-bottom: 2%;
+            }
+            //closes h4
+            .jobdescription {
+                .column();
+                list-style-type: disc;
+                font-size: 16px;
+
+                li {
+                    padding: 0.5%;
+                }
+            }
+        }
+    }// closes resume info

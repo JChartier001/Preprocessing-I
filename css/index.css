@@ -130,10 +130,6 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
 body {
   display: flex;
   flex-flow: column wrap;
@@ -143,14 +139,11 @@ body {
 section {
   display: flex;
   flex-direction: row-reverse;
-  /*align-content: stretch;*/
   height: 100vh;
-  border: 1px solid green;
 }
 section .myinfocontent {
-  /*.column();*/
   background-color: lavenderblush;
-  width: 25%;
+  width: 30%;
   padding: 0 2%;
   height: 100%;
 }
@@ -179,13 +172,13 @@ section .myinfocontent img {
   margin-top: 10%;
 }
 section .myinfocontent h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   padding: 3%;
 }
 section .myinfocontent h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin: 2% 0;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
@@ -240,13 +233,40 @@ section .skills ul li {
   width: 80%;
   margin-left: 5%;
 }
-header nav {
+.resumeinfo {
+  background-color: offwhite;
+  width: 100%;
+}
+.resumeinfo header nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  background-color: lavenderblush;
+  background-color: offwhite;
 }
-header nav a {
+.resumeinfo header nav a {
   width: 10%;
   justify-content: center;
+}
+.resumeinfo .experience {
+  margin-top: 15%;
+}
+.resumeinfo .experience h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 2% 0;
+}
+.resumeinfo .experience div h4 {
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+}
+.resumeinfo .experience div .jobdescription {
+  display: flex;
+  flex-flow: column wrap;
+  list-style-type: disc;
+  font-size: 16px;
+}
+.resumeinfo .experience div .jobdescription li {
+  padding: 0.5%;
 }
