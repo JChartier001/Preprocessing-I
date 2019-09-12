@@ -245,7 +245,7 @@ section .myinfocontent .skills ul li {
 .resumeinfo {
   background-color: ghostwhite;
   width: 100%;
-  margin-left: 2%;
+  padding-left: 2%;
 }
 .resumeinfo nav {
   display: flex;
