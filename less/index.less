@@ -65,7 +65,7 @@ table {
 }
 
 @rightbackground: lavenderblush;
-@leftbackground: offwhite;
+@leftbackground: ghostwhite;
 
 .h3() {
     font-size: 1.8rem;
@@ -104,23 +104,19 @@ html, body {
     
 }
 
-body {
-    .column();
-     /*height: 100vh;*/
-}
+
 
 
 section {
     display: flex;
     flex-direction: row-reverse;
-    /*height: 100vh;*/
-
+    
 
     .myinfocontent {
         background-color: @rightbackground;
         width: 45%;
         padding: 0 2%;
-        height: 100vh;
+        /*height: 100%;*/
 
         img {
             padding: 2%;
@@ -238,24 +234,24 @@ section {
     margin-left: 2%;
 
     header {
-        
-
-        
-
-        nav {
-            display: flex;
-            width: 100%;
-            justify-content: flex-end;
-            background-color: @leftbackground;
-            border: 1px solid red;
+    }
 
 
-
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        background-color: @leftbackground;
+        @media (max-width: 500px) {
+                
+                justify-content: space-between;
+            }//closes media query
+            
             a {
                 width: 10%;
                 justify-content: center;
                 margin-top: 1%;
-                border: 1px solid green;
+               
             }
             //closes a
         }
@@ -327,11 +323,5 @@ section {
         }
         //closes out education
     }
-}
 
-@media screen and (max-width: 500px) {
-    .resumeinfo header nav {
-        
-        justify-content: space-between;
-    }
-}
+

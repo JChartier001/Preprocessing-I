@@ -130,21 +130,15 @@ table {
 * {
   box-sizing: border-box;
 }
-body {
-  display: flex;
-  flex-flow: column wrap;
-  /*height: 100vh;*/
-}
 section {
   display: flex;
   flex-direction: row-reverse;
-  /*height: 100vh;*/
 }
 section .myinfocontent {
   background-color: lavenderblush;
   width: 45%;
   padding: 0 2%;
-  height: 100vh;
+  /*height: 100%;*/
 }
 section .myinfocontent img {
   padding: 2%;
@@ -238,39 +232,42 @@ section .myinfocontent .skills ul li {
   margin-left: 5%;
 }
 .resumeinfo {
-  background-color: offwhite;
+  background-color: ghostwhite;
   width: 100%;
   margin-left: 2%;
 }
-.resumeinfo header nav {
+.resumeinfo nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  background-color: offwhite;
-  border: 1px solid red;
+  background-color: ghostwhite;
 }
-.resumeinfo header nav a {
+@media (max-width: 500px) {
+  .resumeinfo nav {
+    justify-content: space-between;
+  }
+}
+.resumeinfo nav a {
   width: 10%;
   justify-content: center;
   margin-top: 1%;
-  border: 1px solid green;
 }
-.resumeinfo .experience {
+.experience {
   margin-top: 10%;
 }
-.resumeinfo .experience h2 {
+.experience h2 {
   font-size: 3rem;
   text-decoration: underline;
   margin: 2% 0;
 }
-.resumeinfo .experience div h4 {
+.experience div h4 {
   font-size: 1.8rem;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2%;
   margin-left: 1%;
 }
-.resumeinfo .experience div .jobdescription {
+.experience div .jobdescription {
   display: flex;
   flex-flow: column wrap;
   list-style-type: disc;
@@ -278,21 +275,21 @@ section .myinfocontent .skills ul li {
   margin-bottom: 2%;
   margin-left: 3%;
 }
-.resumeinfo .experience div .jobdescription li {
+.experience div .jobdescription li {
   padding: 0.5%;
 }
-.resumeinfo .education {
+.education {
   margin-top: 10%;
 }
-.resumeinfo .education .NWTC h2 {
+.education .NWTC h2 {
   font-size: 2.5rem;
   text-decoration: underline;
   margin: 2% 0;
 }
-.resumeinfo .education .NWTC .name {
+.education .NWTC .name {
   /*}*/
 }
-.resumeinfo .education .NWTC .name h4 {
+.education .NWTC .name h4 {
   font-size: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -300,15 +297,8 @@ section .myinfocontent .skills ul li {
   margin-right: 45%;
   margin-left: 1%;
 }
-.resumeinfo .education .NWTC .name .program {
+.education .NWTC .name .program {
   font-size: 1.2rem;
   margin-bottom: 2%;
   margin-left: 3%;
-}
-@media (max-width: 500px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
