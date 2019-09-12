@@ -2,6 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Gayathri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gayathri Regular'), local('Gayathri-Regular'), url(https://fonts.gstatic.com/s/gayathri/v1/MCoQzAb429DbBilWLLA_-ps.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -88,6 +95,7 @@ video {
   border: 0;
   font-size: 62.5%;
   font: inherit;
+  font-family: 'Gayathri', sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -173,6 +181,7 @@ section .myinfocontent .contactinfo {
 section .myinfocontent .contactinfo h3 {
   font-size: 1.8rem;
   margin: 2% 0;
+  padding-top: 2%;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -218,7 +227,9 @@ section .myinfocontent .skills {
 }
 section .myinfocontent .skills h3 {
   font-size: 1.8rem;
+  text-align: center;
   margin: 2% 0;
+  padding-top: 2%;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
   width: 30%;
