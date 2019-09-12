@@ -83,78 +83,97 @@ table {
     font-size: 1.5rem;
 }
 
+.resumeh1() {
+    font-size: 3rem;
+
+}
+
+.resumeh2() {
+    font-size: 2.5rem;
+}
+
+.resumeh3() {
+    font-size: 2.0rem;
+}
+
+.resumeh4() {
+    font-size: 1.8rem;
+}
+
 html, body {
     
 }
 
 body {
     .column();
-    align-content: center;
-    height: 100%;
+     /*height: 100vh;*/
 }
 
 
 section {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
-    
+    /*height: 100vh;*/
 
-   
+
     .myinfocontent {
         background-color: @rightbackground;
-        width: 30%;
+        width: 45%;
         padding: 0 2%;
-        height: 100%;
+        height: 100vh;
 
+        img {
+            padding: 2%;
+            margin-top: 5%;
+        }
+        //closes img
+        h1 {
+            .display();
+            .resumeh1();
+            justify-content: center;
+            padding: 1%;
+        }
+        //closes h1
+        h2 {
+            .resumeh2();
+            display: flex;
+            justify-content: center;
+            padding: 3%;
+        }
+        //closes h2
+        h4 {
+            .h4();
+        }
+        // closes h4
         .contactinfo {
             .column();
             padding: 1%;
             padding-bottom: 1%;
             align-content: flex-start;
             width: 100%;
-            margin: 15% 0;
+            margin: 6% 0;
             margin-bottom: 8%;
 
+            h3 {
+                .h3();
+                margin: 2% 0;
+                border-top: 5px solid black;
+                border-bottom: 5px solid black;
+            }
+            //closes h3
             p {
                 padding: 1%;
             }
+            //closesp
         }
         //closes contactinfo
-        h1 {
-            .display();
-            .h1();
-            justify-content: center;
-            padding: 1%;
-        }
-        //closes h1
-        img {
-            padding: 2%;
-            margin-top: 10%;
-        }
-        //closes img
-        h2 {
-            .h2();
-            display: flex;
-            justify-content: center;
-            padding: 3%;
-        }
-        //closes h2
-        h3 {
-            .h3();
-            margin: 2% 0;
-            border-top: 5px solid black;
-            border-bottom: 5px solid black;
-        }
-        //closes h3
         .workwithme {
-            font-size: 1.5rem;
+            .h4();
             font-style: italic;
             .display();
             text-align: center;
-            margin-top: 20%;
-            margin-bottom: 10%;
-            padding-bottom: 3%;
+            margin-top: 10%;
+            margin-bottom: 8%;
         }
         //closes workwithme
         .contactmebutton {
@@ -181,52 +200,62 @@ section {
             // closes hover
         }
         //closes contactmebutton
-    }
-
-    .skills {
-        .column();
-        width: 100%;
-        margin-top: 20%;
+        .skills {
+            .column();
+            width: 100%;
+            margin-top: 10%;
 
 
-        h3 {
-            width: 30%;
-            margin-bottom: 5%;
-        }
-        //closes h3
-        ul {
-            list-style-type: disc;
-
-
-            li {
-                padding-bottom: 5%;
-                width: 80%;
-                margin-left: 5%;
+            h3 {
+                .h3();
+                margin: 2% 0;
+                border-top: 5px solid black;
+                border-bottom: 5px solid black;
+                width: 30%;
             }
+            //closes h3
+            
+            ul {
+                list-style-type: disc;
+
+
+                li {
+                    padding-bottom: 5%;
+                    width: 80%;
+                    margin-left: 5%;
+                }
+            }
+            //closes ul
         }
-        //closes ul
+        //closes skills
     }
-    //closes skills
     //closes myinfocontent
 }
-    //closes section
-
+//closes section
 .resumeinfo {
     background-color: @leftbackground;
     width: 100%;
+    margin-left: 2%;
 
     header {
+        
 
+        
 
         nav {
             display: flex;
             width: 100%;
             justify-content: flex-end;
             background-color: @leftbackground;
+            border: 1px solid red;
+
+
 
             a {
                 width: 10%;
                 justify-content: center;
+                margin-top: 1%;
+                border: 1px solid green;
             }
             //closes a
         }
@@ -234,10 +263,10 @@ section {
     }
     //closes header
     .experience {
-        margin-top: 15%;
+        margin-top: 10%;
 
         h2 {
-            .h2();
+            .resumeh1();
             text-decoration: underline;
             margin: 2% 0;
         }
@@ -245,15 +274,18 @@ section {
         div {
 
             h4 {
-                .h4();
+                .resumeh4();
                 .display();
                 margin-bottom: 2%;
+                margin-left: 1%;
             }
             //closes h4
             .jobdescription {
                 .column();
                 list-style-type: disc;
-                font-size: 16px;
+                .h4();
+                margin-bottom: 2%;
+                margin-left: 3%;
 
                 li {
                     padding: 0.5%;
@@ -264,30 +296,42 @@ section {
     }
     //closes experience
     .education {
-        margin-top: 15%;
+        margin-top: 10%;
 
-        h2 {
-            .h2();
-            text-decoration: underline;
-            margin: 2% 0;
-        }
-        //closes h2
-        div {
+        .NWTC {
 
-            h4 {
-                .h4();
-                .display();
-                margin-bottom: 2%;
+            h2 {
+                .resumeh2();
+                text-decoration: underline;
+                margin: 2% 0;
             }
-            //closes h4
-            .jobdescription {
-                .column();
-                list-style-type: disc;
-                font-size: 16px;
+            //closes h2
+            .name {
 
-                li {
-                    padding: 0.5%;
+                h4 {
+                    .resumeh3();
+                    .display();
+                    justify-content: space-between;
+                    margin-right: 45%;
+                    margin-left: 1%;
+                }
+                //closes h4
+                //closes name
+                /*}*/ //closes NWTC
+                .program {
+                    font-size: 1.2rem;
+                    margin-bottom: 2%;
+                    margin-left: 3%;
                 }
             }
         }
-    }// closes resume info
+        //closes out education
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .resumeinfo header nav {
+        
+        justify-content: space-between;
+    }
+}
